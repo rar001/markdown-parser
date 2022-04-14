@@ -19,6 +19,10 @@ public class MarkdownParse {
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
 
+            if (markdown.charAt(openBracket-1) == '!') {
+                toReturn.remove(toReturn.size()-1);
+            }
+
             if (markdown.indexOf("[",currentIndex) == -1) {
                 break;
             }
