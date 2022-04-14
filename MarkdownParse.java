@@ -23,7 +23,7 @@ public class MarkdownParse {
                 toReturn.remove(toReturn.size()-1);
             }
 
-            if (markdown.indexOf("[",currentIndex) == -1) {
+            if (markdown.indexOf("]", currentIndex) == -1) {
                 break;
             }
         }
