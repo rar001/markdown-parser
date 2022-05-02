@@ -27,12 +27,20 @@ public class MarkdownParse {
                 if (markdown.indexOf("]", currentIndex) == -1) {
                     break;
                 }
+                
             }
 
             else {
+                
                 return toReturn;
             }
         }
+
+        /*for (int i = 0; i < toReturn.size(); i++) {
+            if (toReturn.get(i).contains(".") == false) {
+                toReturn.remove(i);
+            }
+        }*/
 
         return toReturn;
     }
