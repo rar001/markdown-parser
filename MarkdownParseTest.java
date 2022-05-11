@@ -32,7 +32,7 @@ public class MarkdownParseTest {
     @Test
     public void testfile() {
         assertEquals(List.of("https://something.com", "some-thing.html"), MarkdownParse.getLinks(content));
-        assertEquals(List.of("some-thing.html", ""), MarkdownParse.getLinks(content2));
+        assertEquals(List.of("some-thing.html"), MarkdownParse.getLinks(content2));
         assertEquals(List.of("https://youtube.com"), MarkdownParse.getLinks(content3));
         assertEquals(List.of(), MarkdownParse.getLinks(content4));
     }
