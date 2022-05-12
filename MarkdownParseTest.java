@@ -22,6 +22,8 @@ public class MarkdownParseTest {
         content2 = Files.readString(testfile2);
         content3 = Files.readString(testfile3);
         content4 = Files.readString(testfile4);
+
+        
     }
 
     @Test
