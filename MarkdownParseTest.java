@@ -14,10 +14,10 @@ public class MarkdownParseTest {
 
     @Before
     public void setUp() throws IOException {
-        testfile = Path.of("/Users/anthonyramirez/Documents/SPRING22/CSE15L/markdown-parser/test-file.md");
-        testfile2 = Path.of("/Users/anthonyramirez/Documents/SPRING22/CSE15L/markdown-parser/test1.md");
-        testfile3 = Path.of("/Users/anthonyramirez/Documents/SPRING22/CSE15L/markdown-parser/test2.md");
-        testfile4 = Path.of("/Users/anthonyramirez/Documents/SPRING22/CSE15L/markdown-parser/test3.md");
+        testfile = Path.of("rar001/markdown-parser/test-file.md");
+        testfile2 = Path.of("rar001/markdown-parser/test1.md");
+        testfile3 = Path.of("rar001/markdown-parser/test2.md");
+        testfile4 = Path.of("rar001/markdown-parser/test3.md");
         content = Files.readString(testfile);
         content2 = Files.readString(testfile2);
         content3 = Files.readString(testfile3);
