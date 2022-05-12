@@ -36,11 +36,11 @@ public class MarkdownParse {
             }
         }
 
-        for (int i = 0; i < toReturn.size(); i++) {
+        /*for (int i = 0; i < toReturn.size(); i++) {
             if (toReturn.get(i).contains(".") == false) {
                 toReturn.remove(i);
             }
-        }
+        }*/
 
         return toReturn;
     }
