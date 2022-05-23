@@ -27,7 +27,6 @@ public class MarkdownParse {
                 if (markdown.indexOf("]", currentIndex) == -1) {
                     break;
                 }
-                
             }
 
             else {
