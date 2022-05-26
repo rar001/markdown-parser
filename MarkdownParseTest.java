@@ -14,27 +14,27 @@ public class MarkdownParseTest {
 
     @Before
     public void setUp() throws IOException {
-        testfile = Path.of("/Users/anthonyramirez/Documents/SPRING22/CSE15L/markdown-parser/test-file.md");
-        testfile2 = Path.of("/Users/anthonyramirez/Documents/SPRING22/CSE15L/markdown-parser/test1.md");
-        testfile3 = Path.of("/Users/anthonyramirez/Documents/SPRING22/CSE15L/markdown-parser/test2.md");
-        testfile4 = Path.of("/Users/anthonyramirez/Documents/SPRING22/CSE15L/markdown-parser/test3.md");
+        testfile = Path.of("rar001/markdown-parser/test-file.md");
+        testfile2 = Path.of("rar001/markdown-parser/test1.md");
+        testfile3 = Path.of("rar001/markdown-parser/test2.md");
+        testfile4 = Path.of("rar001/markdown-parser/test3.md");
         content = Files.readString(testfile);
         content2 = Files.readString(testfile2);
         content3 = Files.readString(testfile3);
         content4 = Files.readString(testfile4);
 
-        snippet1 = Path.of("/Users/anthonyramirez/Documents/SPRING22/CSE15L/markdown-parser/lab4/snippet1.md");
+        /*snippet1 = Path.of("/Users/anthonyramirez/Documents/SPRING22/CSE15L/markdown-parser/lab4/snippet1.md");
         snippet2 = Path.of("/Users/anthonyramirez/Documents/SPRING22/CSE15L/markdown-parser/lab4/snippet2.md");
         snippet3 = Path.of("/Users/anthonyramirez/Documents/SPRING22/CSE15L/markdown-parser/lab4/snippet3.md");
         content5 = Files.readString(snippet1);
         content6 = Files.readString(snippet2);
-        content7 = Files.readString(snippet3);
+        content7 = Files.readString(snippet3);*/
     }
 
-    @Test
+    /*@Test
     public void testSnippet() {
         assertEquals(List.of("https://cse.ucsd.edu/"), MarkdownParse.getLinks(content7)); 
-    }
+    }*/
 
 
 //javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java && java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest
@@ -46,11 +46,11 @@ public class MarkdownParseTest {
         assertEquals(2, 1 + 1); //works
     }
 
-    /*@Test
+    @Test
     public void testfile() {
         assertEquals(List.of("https://something.com", "some-thing.html"), MarkdownParse.getLinks(content));
         assertEquals(List.of("some-thing.html"), MarkdownParse.getLinks(content2));
         assertEquals(List.of("https://youtube.com"), MarkdownParse.getLinks(content3));
         assertEquals(List.of(), MarkdownParse.getLinks(content4));
-    }*/
+    }
 }
